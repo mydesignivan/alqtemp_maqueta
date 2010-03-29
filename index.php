@@ -36,7 +36,7 @@ $execscript=false;
                                 <label class="label1">Categor&iacute;a:&nbsp;</label><span>Casas</span><br />
                                 <label class="label1">Ciudad:&nbsp;</label><span>Mendoza</span><br />
                                 <?php //if( !empty($row['price']) ){?><div class="float-left"><label class="label1">Precio:&nbsp;</label><span>$ 2500</span></div><?php //}?>
-                                <div class="float-right"><button class="button">M&aacute;s info</button></div>
+                                <div class="float-right"><button class="button-small">M&aacute;s info</button></div>
                             </div>
                         </div>
                         <div class="prop-row">
@@ -49,7 +49,7 @@ $execscript=false;
                                 <label class="label1">Categor&iacute;a:&nbsp;</label><span>Casas</span><br />
                                 <label class="label1">Ciudad:&nbsp;</label><span>Mendoza</span><br />
                                 <?php //if( !empty($row['price']) ){?><div class="float-left"><label class="label1">Precio:&nbsp;</label><span>$ 2500</span></div><?php //}?>
-                                <div class="float-right"><button class="button">M&aacute;s info</button></div>
+                                <div class="float-right"><button class="button-small">M&aacute;s info</button></div>
                             </div>
                         </div>
 

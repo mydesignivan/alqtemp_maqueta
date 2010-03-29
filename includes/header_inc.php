@@ -11,9 +11,19 @@
                 <a href="<?//=site_url('/index/');?>" class="link1"><img src="images/icon_home.png" alt="" /> Inicio</a>
                 <a href="<?//=site_url('/contacto/');?>" class="link1"><img src="images/icon_contact.png" alt="" /> Contacto</a>
             </div>
+
             <div class="column prepend-1">
                 <a href="<?//=site_url('/registro/');?>" onmouseover="this.firstChild.src='images/btn_register_over.png'" onmouseout="this.firstChild.src='images/btn_register.png'"><img src="images/btn_register.png" alt="Registrarse" /></a>
             </div>
+
+            <!--<div class="float-left">
+                <label class="label-user">Usuario:&nbsp;</label>
+                <span class="text-small">iwmattoni&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <a href="" class="link2">(mi cuenta)</a>
+            </div>
+            <div class="float-right append-right-small">
+                <button type="button" class="button-small">Salir</button>
+            </div>-->
             <!-- =============== END LINKS HEADER TOP =============== -->
 
             <!-- =============== LOGIN =============== -->
@@ -46,7 +56,7 @@
             <div class="row1">
                 <label class="label-search">Buscador&nbsp;</label>
                 <div class="cont-input"><img src="images/icon_search.png" alt="" class="float-left" /><input type="text" class="i1" name="txtSearch" value="<?=@$_POST["txtSearch"];?>" onkeypress="if(getKeyCode(event)==13) $('#formSearch').submit();" /></div>
-                <button type="submit" class="button">Buscar</button>
+                <button type="submit" class="button-small">Buscar</button>
             </div>
             <div class="row2">
                 <div class="span-4">

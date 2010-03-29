@@ -44,7 +44,7 @@ $execscript=false;
                             </p>
 
                             <div class="span-15 text-center prepend-top">
-                                <button type="button" class="button" onclick="RememberPass.send()">Enviar</button>
+                                <button type="button" class="button-small" onclick="RememberPass.send()">Enviar</button>
                             </div>
                         <?php }?>
                         </form>

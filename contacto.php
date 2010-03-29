@@ -67,7 +67,7 @@ $execscript=false;
                                 </div>
 
                                 <div class="clear span-13 text-center">
-                                    <button type="button" class="button" onclick="Contact.send();">Enviar</button>
+                                    <button type="button" class="button-small" onclick="Contact.send();">Enviar</button>
                                 </div>
                             </form>
                         </div>

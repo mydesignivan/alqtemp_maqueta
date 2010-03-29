@@ -55,7 +55,7 @@ $execscript=false;
                                 <input type="password" name="txtPass2" class="input-form validate" />
                             </p>
 
-                            <div class="span-15 text-center prepend-top"><button type="button" onclick="RememberPass.send();" class="button">Cambiar</button></div>
+                            <div class="span-15 text-center prepend-top"><button type="button" onclick="RememberPass.send();" class="button-small">Cambiar</button></div>
 
                             <input type="hidden" name="usr" value="<?=@$username;?>" />
                             <input type="hidden" name="token" value="<?=@$token;?>" />

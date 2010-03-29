@@ -40,7 +40,7 @@ $execscript=false;
                                     </div>
                                     <div class="col-arrow"><a href="javascript:void(ImageGallery.back());"><img src="images/icon_arrow_right.png" alt="Left" onmouseover="this.src='images/icon_arrow_right_over.png'" onmouseout="this.src='images/icon_arrow_right.png'" /></a></div>
                                 </div>
-                                <div class="description margin-left-1">
+                                <div class="description prepend-left-small">
                                     <h2>Descripci&oacute;n</h2>
                                     <p>asdasd a d asd a sd as d asd sdfsdfsd fs dfsdf sdf dsfsda asdf a sdf asd fa sdf sa fd sdf</p>
                                 </div>
@@ -81,7 +81,7 @@ $execscript=false;
                             </div>
                         </div>
 
-                        <div class="more-info-servicios margin-left-1">
+                        <div class="more-info-servicios prepend-left-small">
                             <h2>Servicios</h2>
                             <ul class="ul-list line-right">
                                 <li><span>Servicios 1</span></li>

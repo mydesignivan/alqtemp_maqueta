@@ -2,7 +2,7 @@
  - ESTILO GENERAL
  -----------------------------------------------------------------------------*/
 body {
-    font: 100% Verdana, Arial, Helvetica, sans-serif;
+    font: 100% Arial, Helvetica, sans-serif;
     background: url(../images/bg_texture_top.jpg) top left repeat-x #FAF5E1;
     /*color: #000000;*/
     color:#684C1D;
@@ -14,7 +14,8 @@ body {
 .margin-null{margin:0 !important;}
 .tag-center{margin: 0 auto !important;}
 .text-center{text-align: center !important;}
-.margin-left-1{margin-left:15px !important;}
+.prepend-left-small{margin-left:15px !important;}
+.append-right-small{margin-right: 15px !important;}
 .border{border:1px solid red !important;}
 
 p{margin-bottom:0;}
@@ -124,6 +125,10 @@ label.label3{
     font-size: 75%;
     color: #6C491E;
 }
+label.label-user{
+    font-size: 75%;
+    color: #FF7D00;
+}
 label.label-legend{
     font-size: 70%;
     font-style:italic;
@@ -200,7 +205,7 @@ button{
     font-weight:bold;
     text-align:center;
 }
-button.button{
+button.button-small{
     width:76px;
     height:25px;
     background:url(../images/btn_small.png) no-repeat center left;
@@ -208,10 +213,10 @@ button.button{
     cursor: pointer;
     
 }
-    button.button:hover{
+    button.button-small:hover{
         background:url(../images/btn_small_over.png) no-repeat center left;
     }
-button.button2{
+button.button-large{
     width:121px;
     height:27px;
     background:url(../images/btn_large.png) no-repeat center left;
@@ -219,7 +224,7 @@ button.button2{
     cursor: pointer;
     padding-bottom: 4px;
 }
-    button.button2:hover{
+    button.button-large:hover{
         background:url(../images/btn_large_over.png) no-repeat center left;
     }
 
@@ -374,12 +379,18 @@ select.select-contact2{
     width:590px;
     /*border:1px solid red;*/
 }
+.menu-container2{
+    float: left;
+    margin-left: 15px;
+    width:950px;
+    /*border:1px solid red;*/
+}
 ul.menu{
     list-style-type: none;
     margin:0;
     padding:0;
     float: left;
-    width: 588px;
+    width: 100%;
     height: inherit;
     z-index: 0;
     /*border: 1px solid green;*/
@@ -436,9 +447,10 @@ ul.menu{
             float:left;
             clear: left;
             background: url(../images/form_center.png) repeat-y;
-            width:648px;
+            width:640px;
             margin-left:3px;
-            padding:10px 0 15px 15px;
+            padding:10px 15px 15px 15px;
+            /*border:1px solid red;*/
         }
         .main-container .column-left .row-bottom{
             float:left;
@@ -650,3 +662,77 @@ ul.ul-list{
 .form-contact-message{
     margin: 64px 0 0 200px;
 }
+
+/*------------------------------------------------------------------------------
+ - ESTILOS PARA MENSAJES
+ -----------------------------------------------------------------------------*/
+.message-attention{
+    margin:0 auto;
+    background:url(../images/bg_attention.png) no-repeat;
+    width:400px;
+    height:70px;
+    padding:15px 0 0 75px;
+    font-size: 70%;
+    color:#FE8405;
+    /*border:1px solid red;*/
+}
+    .message-attention .message{width:380px;}
+
+
+/*------------------------------------------------------------------------------
+ - ESTILOS PARA TABLAS (general)
+ -----------------------------------------------------------------------------*/
+table{
+    font-size: 80%;
+    width: 633px;
+}
+table thead{
+    background: url(../images/bg_table_top.png) repeat-x top left;
+}
+    table thead tr td{
+        font-weight: bold;
+        padding-left: 10px;
+    }
+table tbody{
+    background-color: #FAF8E9;
+    font-weight: normal;
+}
+    table tbody tr td{
+        padding:5px 0 5px 10px;
+    }
+    table tbody .row-par{
+        background-color: #FDFDF5;
+    }
+    table tbody .row-hover:hover{
+        background-color: #E3C8B9;
+    }
+    /*table tbody td{border-right: 1px solid red;}*/
+
+/*------------------------------------------------------------------------------
+ - ESTILOS PARA TABLAS "PROPIEDADES"
+ -----------------------------------------------------------------------------*/
+.tbl-prop{
+    margin-top: 20px;
+}
+    .tbl-prop .cell-1{
+        width: 10px;
+        border-right: 1px solid #CFD0CB;
+        padding-left:5px;
+    }
+        .tbl-prop .cell-1 input{margin:0;padding:0;}
+    .tbl-prop .cell-2{
+        width: 85px;
+        border-right: 1px solid #CFD0CB;
+    }
+    .tbl-prop .cell-3{
+        width: 340px;
+        border-right: 1px solid #CFD0CB;
+        vertical-align: top;
+    }
+    .tbl-prop .cell-4{
+        width:150px;
+        vertical-align: top;
+    }
+    .tbl-prop tbody tr .cell-4{
+        color:#FC7F07;
+    }
