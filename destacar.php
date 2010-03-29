@@ -28,10 +28,55 @@ $execscript=false;
                     <div class="row-center min-height-2">
                         <div class="message-attention"><div class="message">El posicionamiento de la propiedad <b>se realizar&aacute; unicamente para la secci&oacute;n elegida</b> y la <b>propiedad seleccionada.</b> La duraci&oacute;n de la posici&oacute;n ser&aacute; de <b>1 mes</b> desde la fecha de contrataci&oacute;n.</div></div>
 
-                        <div class="clear float-right">
-                            <button type="button" class="button-small">Destacar</button>
-                            <button type="button" class="button-large">No Destacar</button>
+
+                        <div class="clear prepend-top">
+                            <h2 class="float-left">Propiedades Destacadas</h2>
+                            <button type="button" class="button-large float-right">No Destacar</button>
                         </div>
+
+                        <table class="tbl-prop" cellpadding="0" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <td class="cell-1">&nbsp;</td>
+                                    <td class="cell-2">Im&aacute;gen</td>
+                                    <td class="cell-3">Ubicaci&oacute;n</td>
+                                    <td class="cell-4">Categor&iacute;a</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="cell-1"><input type="checkbox" value="1" /></td>
+                                    <td class="cell-2"><img src="casas/1_1_galeria_+1_thumb.jpg" alt="" width="85" height="70" /></td>
+                                    <td class="cell-3"><a href="" class="link5">Martinez de rosas 1020 ciudad Mendoza</a></td>
+                                    <td class="cell-4">Casas</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="clear prepend-top">
+                            <h2 class="float-left">Mis Propiedades</h2>
+                            <button type="button" class="button-large float-right">Destacar</button>
+                        </div>
+
+                        <table class="tbl-prop" cellpadding="0" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <td class="cell-1">&nbsp;</td>
+                                    <td class="cell-2">Im&aacute;gen</td>
+                                    <td class="cell-3">Ubicaci&oacute;n</td>
+                                    <td class="cell-4">Categor&iacute;a</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="cell-1"><input type="checkbox" value="1" /></td>
+                                    <td class="cell-2"><img src="casas/1_1_galeria_+1_thumb.jpg" alt="" width="85" height="70" /></td>
+                                    <td class="cell-3"><a href="" class="link5">Martinez de rosas 1020 ciudad Mendoza</a></td>
+                                    <td class="cell-4">Casas</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
 
                     </div>
                     <div class="row-bottom"></div>

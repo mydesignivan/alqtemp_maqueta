@@ -26,42 +26,53 @@ $execscript=false;
                 <div class="float-left">
                     <div class="row-top"><h1 class="title">Mi Cuenta</h1></div>
                     <div class="row-center min-height-2">
-                        <form id="formAccount" class="prepend-left-small" action="<?//=site_url('/panel/micuenta/edit');?>" method="post" enctype="application/x-www-form-urlencoded">
-                            <p class="span-10">
-                                <label class="label3 float-left">*Nombre:</label>
-                                <input type="text" name="txtFirstName" class="input-form float-right validate" tabindex="1" />
-                            </p>
-                            <p class="span-10 clear">
-                                <label class="label3 float-left">*Apellido:</label>
-                                <input type="text" name="txtLastName" class="input-form float-right validate" tabindex="2" />
-                            </p>
-                            <p class="span-10 clear">
-                                <label class="label3 float-left">*Email:</label>
-                                <input type="text" name="txtEmail" class="input-form float-right validate" tabindex="3" />
-                            </p>
-                            <p class="span-10 clear">
-                                <label class="label3 float-left">Tel&eacute;fono:</label>
-                                <input type="text" name="txtPhone" class="input-phone float-right" tabindex="5" />
-                                <input type="text" name="txtPhoneArea" class="input-phonearea float-right" tabindex="4" />
-                            </p>
-                            <p class="span-10 clear">
-                                <label class="label3 float-left">*Usuario:</label>
-                                <input type="text" name="txtUser" class="input-form float-right validate" tabindex="6" />
-                            </p>
-                            <p class="span-10 clear">
-                                <label class="label3 float-left">*Password:</label>
-                                <input type="password" name="txtPass" class="input-form float-right validate" tabindex="7" />
-                            </p>
-                            <p class="span-10 clear">
-                                <label class="label3 float-left">*Repetir Contrase&ntilde;a:</label>
-                                <input type="password" name="txtPass2" class="input-form float-right validate" tabindex="8" />
-                            </p>
 
-                            <div class="clear span-15 text-center prepend-top"><button type="button" class="button-small" onclick="Account.save();">Guardar</button></div>
+                        <div class="span-10 prepend-left-small">
+                            <form id="formAccount" action="<?//=site_url('/panel/micuenta/edit');?>" method="post" enctype="application/x-www-form-urlencoded">
+                                <p class="span-10">
+                                    <label class="label3 float-left">*Nombre:</label>
+                                    <input type="text" name="txtFirstName" class="input-form float-right validate" tabindex="1" />
+                                </p>
+                                <p class="span-10 clear">
+                                    <label class="label3 float-left">*Apellido:</label>
+                                    <input type="text" name="txtLastName" class="input-form float-right validate" tabindex="2" />
+                                </p>
+                                <p class="span-10 clear">
+                                    <label class="label3 float-left">*Email:</label>
+                                    <input type="text" name="txtEmail" class="input-form float-right validate" tabindex="3" />
+                                </p>
+                                <p class="span-10 clear">
+                                    <label class="label3 float-left">Tel&eacute;fono:</label>
+                                    <input type="text" name="txtPhone" class="input-phone float-right" tabindex="5" />
+                                    <input type="text" name="txtPhoneArea" class="input-phonearea float-right" tabindex="4" />
+                                </p>
+                                <p class="span-10 clear">
+                                    <label class="label3 float-left">*Usuario:</label>
+                                    <input type="text" name="txtUser" class="input-form float-right validate" tabindex="6" />
+                                </p>
+                                <p class="span-10 clear">
+                                    <label class="label3 float-left">*Password:</label>
+                                    <input type="password" name="txtPass" class="input-form float-right validate" tabindex="7" />
+                                </p>
+                                <p class="span-10 clear">
+                                    <label class="label3 float-left">*Repetir Contrase&ntilde;a:</label>
+                                    <input type="password" name="txtPass2" class="input-form float-right validate" tabindex="8" />
+                                </p>
 
-                            <div class="span-10 clear"><label class="label-legend">(*) Campo obligatorios</label></div>
+                                <div class="clear span-15 text-center prepend-top">
+                                    <button type="button" class="button-large" onclick="Account.save();">Guardar</button>
+                                </div>
 
-                        </form>
+                                <div class="span-10 clear"><label class="label-legend">(*) Campo obligatorios</label></div>
+                            </form>
+                        </div>
+                        
+                        <div class="span-4 last prepend-1">
+                            <br /><br /><br />
+                            <label class="label-large">Saldo Disponible</label><br />
+                            <input type="text" class="input-saldo" value="U$S 5000<?//=$this->session->userdata('fondo');?>" onkeypress="return false;" />
+                        </div>
+
                     </div>
                     <div class="row-bottom"></div>
                 </div>

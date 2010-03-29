@@ -45,6 +45,16 @@ strong{color:#FC7F07;}
 .text-medium{font-size: 90%;}
 .text-large{font-size: 100%;}
 
+.notice{
+    width: 600px;
+    margin-top: 30px;
+}
+
+.row-photo{
+    float:left;
+    width: 473px;
+}
+
 
 /*------------------------------------------------------------------------------
  - ESTILOS PARA LINK
@@ -53,6 +63,14 @@ a{
     text-decoration: none;
     font-size:80%;
 }
+a.link{
+    color:#684C1D;
+    font-weight:bold;
+    font-size: inherit !important;
+}
+    a.link:hover{
+        text-decoration: underline;
+    }
 a.link1{
     color:#684C1D;
     font-weight:bold;
@@ -102,6 +120,14 @@ a.link-signin{
     color:#000;
 }
 
+a.link-attachments{
+    font-size: 80%;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+    color:#684C1D;
+}
+
 /*------------------------------------------------------------------------------
  - ESTILOS PARA LABEL
  -----------------------------------------------------------------------------*/
@@ -122,7 +148,7 @@ label.label2{
     color: #80694D;
 }
 label.label3{
-    font-size: 75%;
+    font-size: 80%;
     color: #6C491E;
 }
 label.label-user{
@@ -133,6 +159,11 @@ label.label-legend{
     font-size: 70%;
     font-style:italic;
     color:#666D7D;
+}
+label.label-large{
+    font-size: 95%;
+    font-weight: bold;
+    color: #6C491E;
 }
 
 /*------------------------------------------------------------------------------
@@ -161,18 +192,8 @@ input.input-contact{
     border:1px solid #ccc;
     background-color:#FAF8E9;
 }
-textarea.textarea-contact{
-    border:1px solid #ccc;
-    background-color:#FAF8E9;
-    width: 200px;
-    height: 115px;
-}
 input.input-contact2{
     width: 200px;
-}
-textarea.textarea-contact2{
-    width: 495px;
-    height: 180px;
 }
 input.input-form{
     width: 220px;
@@ -193,7 +214,27 @@ input.input-captcha{
     letter-spacing: 5px;
     margin-right: 34px;
 }
+input.input-saldo{
+    font-size: 90%;
+    color:red;
+    width: 120px;
+    text-align: center;
+}
 
+textarea.textarea-contact{
+    border:1px solid #ccc;
+    background-color:#FAF8E9;
+    width: 200px;
+    height: 115px;
+}
+textarea.textarea-contact2{
+    width: 495px;
+    height: 180px;
+}
+textarea.textarea-form{
+    width: 220px;
+    height: 100px;
+}
 
 /*------------------------------------------------------------------------------
  - ESTILOS PARA BUTTON
@@ -262,7 +303,18 @@ select.select-contact2{
     width:210px;
     border:1px #FAD4A3 solid;
 }
+select.select-form{
+    width:228px;
+}
 
+/*------------------------------------------------------------------------------
+ - ESTILOS PARA TEXTOS
+ -----------------------------------------------------------------------------*/
+.text-destacado{
+    color:#F64923;
+    font-size: 120%;
+    text-align: center;
+}
 
 
 /*------------------------------------------------------------------------------
@@ -547,13 +599,17 @@ ul.menu{
 /*------------------------------------------------------------------------------
  - ESTILOS PARA LISTAS
  -----------------------------------------------------------------------------*/
+ul{
+    list-style-type: none;
+    display: list-item;
+    margin:0;
+    padding: 0;
+}
 ul.ul-list{
     float: left;
     margin:0 5px 0 0;
     padding:0 5px 0 0;
     color:#333333;
-    display: list-item;
-    list-style-type: none;
     font-size: 80%;
     width: 190px;
 }
@@ -563,6 +619,45 @@ ul.ul-list{
         background-color:#FCF5D8;
         margin-bottom:5px;
     }
+
+
+ul.ul-list-cuentaplus{
+    color:#FE8405;
+    font-size: 80%;
+    margin-left: 160px;
+}
+    ul.ul-list-cuentaplus li{
+        list-style-image:url(../images/icon_tips.png);
+        list-style-position:inside;
+        margin-bottom:5px;
+    }
+    ul.ul-list-cuentaplus .sintip{
+        list-style-image:none !important;
+        padding-left: 24px;
+    }
+
+.list-servicios{
+    float: right;
+    width:225px;
+    height:110px;
+    border: 1px solid #DBB076;
+    overflow: auto;
+    overflow-x: hidden !important;
+    font-size: 80%;
+}
+    .list-servicios ul{
+        width:100%;
+        background-color: #FAF8E9;
+    }
+        .list-servicios input{margin:0;padding:0;}
+        .list-servicios ul li{
+            width: 100%;
+            padding: 1px 0 3px 0;
+            background-color: #F4C990;
+        }
+        .list-servicios ul .row-par{
+            background-color: #FAF8E9;
+        }
 
 /*------------------------------------------------------------------------------
  - ESTILOS PARA SECCION (MAS INFO)
@@ -677,6 +772,27 @@ ul.ul-list{
     /*border:1px solid red;*/
 }
     .message-attention .message{width:380px;}
+
+.message-rectangle{
+    background:url(../images/bg_rectangle.png) no-repeat;
+    width:374px;
+    height: 58px;
+    color:#FE8405;
+    margin: 0 auto;
+    padding-top:30px;
+    text-align: center;
+    font-weight: bold;
+    font-size:90%;
+}
+
+/*------------------------------------------------------------------------------
+ - ESTILOS PARA AJAXLOADER
+ -----------------------------------------------------------------------------*/
+.ajaxloader2{
+    float:left;
+    display: none;
+    margin-right: 10px;
+}
 
 
 /*------------------------------------------------------------------------------
